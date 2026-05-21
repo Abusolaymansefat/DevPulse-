@@ -1,8 +1,10 @@
-import express from "express";
-const app = express()
-const port = 3000
+import express, { type Application, type Request, type Response } from "express";
 
-app.get('/', (req, res) => {
+
+const app: Application = express();
+
+app.get('/', (req:Request, res:Response) => {
   res.send('Hello World!')
 })
 
+export default app;
