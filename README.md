@@ -11,7 +11,6 @@ This project supports authentication, role-based authorization, issue management
 - ✅ User Authentication
 - ✅ JWT Authorization
 - ✅ Role-Based Access Control
-- ✅ Issue CRUD Operations
 - ✅ Protected Routes
 - ✅ PostgreSQL Database
 - ✅ Raw SQL Queries
