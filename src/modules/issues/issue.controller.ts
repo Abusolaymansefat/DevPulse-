@@ -53,7 +53,6 @@ export const getIssues = async (
   }
 };
 
-// get single issue
 
 // get single issue
 export const getIssue = async (
