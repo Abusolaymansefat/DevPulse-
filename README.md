@@ -340,11 +340,21 @@ You can test the API using:
 # 👨‍💻 Developer
 
 ## Abu Solayman Sefat
+Backend Developer
+<div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+  <a href="https://www.linkedin.com/in/abu-solayman-sefat/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
 
-Backend Developer | MERN Stack Developer
+  <a href="mailto:sefat01625@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
 
----
+  <a href="https://portfolio-tau-jet-53.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a>
 
-# 📄 License
-
-This project is licensed under the MIT License.
+  <a href="https://www.facebook.com/abusolaymun.sefat/" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877f2?style=for-the-badge&logo=facebook&logoColor=white"/>
+  </a>
+</div>
