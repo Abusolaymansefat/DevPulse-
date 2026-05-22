@@ -1,9 +1,12 @@
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken"
 import { pool } from "../../db";
+import type { IUser } from "./auth.interface";
+import { generateToken } from "../../utils/jwt";
 
-export const signupUser = async (payload: any) => {
+export const signupUser = async (payload: IUser) => {
+      console.log(payload);
   const { name, email, password, role } = payload;
+  
 
   const existingUser = await pool.query(
     "SELECT * FROM users WHERE email = $1",
@@ -52,14 +55,14 @@ export const loginUser = async (
     throw new Error("Invalid credentials");
   }
 
-//   const token = generateToken({
-//     id: user.id,
-//     name: user.name,
-//     role: user.role,
-//   });
+  const token = generateToken({
+    id: user.id,
+    name: user.name,
+    role: user.role,
+  });
 
   return {
-//     token,
+    token,
     user: {
       id: user.id,
       name: user.name,
