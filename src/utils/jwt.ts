@@ -1,13 +1,25 @@
-import jwt from "jsonwebtoken";
+import jwt, { type Secret, type SignOptions } from "jsonwebtoken";
 
-export const generateToken = (payload: string | object) => {
-  const secret = process.env.JWT_SECRET;
+export const generateToken = (
+  payload: string | object
+) => {
+
+  const secret: Secret =
+    process.env.JWT_SECRET as string;
 
   if (!secret) {
-    throw new Error("JWT_SECRET environment variable is required");
+    throw new Error(
+      "JWT_SECRET environment variable is required"
+    );
   }
 
-  return jwt.sign(payload, secret, {
-    expiresIn: process.env.JWT_EXPIRES_IN,
-  });
+  const options: SignOptions = {
+    expiresIn: "7d",
+  };
+
+  return jwt.sign(
+    payload,
+    secret,
+    options
+  );
 };
