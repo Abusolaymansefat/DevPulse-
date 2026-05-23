@@ -1,15 +1,61 @@
-import { Router } from "express";
-import { login, signup } from "./auth.controller";
+import {
+      Router,
+      type Request,
+      type Response,
+} from "express";
+
+import {
+      login,
+      signup,
+} from "./auth.controller";
+import { verifyToken } from "../../middleware/auth.middleware";
+
 
 const router = Router();
 
-router.post("/signup", signup);
-router.get("/signup", (req, res) => {
-  res.send("signup Route");
-});
-router.post("/login", login);
-router.get("/login", (req, res) => {
-  res.send("Login Route");
-});
 
-export  const authRouter = router;
+
+// signup
+router.post(
+      "/signup",
+      signup
+);
+
+
+// signup test route
+router.get(
+      "/signup",
+      (req: Request, res: Response) => {
+
+            res.status(200).json({
+                  success: true,
+                  message: "Signup Route Working",
+            });
+
+      }
+);
+
+
+// login
+router.post(
+      "/login",
+      login
+);
+
+
+// login test route
+router.get(
+      "/login",
+      verifyToken,
+      (req: Request, res: Response) => {
+
+            res.status(200).json({
+                  success: true,
+                  message: "Login Route Working",
+            });
+
+      }
+);
+
+
+export const authRouter = router;

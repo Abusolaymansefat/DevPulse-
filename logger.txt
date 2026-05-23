@@ -96,3 +96,69 @@ URL: /api/issues/4
 Status: 200
 Time   -> 5/23/2026, 8:23:32 PM
 -----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:18:20 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:18:22 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:20:39 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:30:43 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 9:31:08 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 9:39:28 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 9:39:30 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:39:40 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 9:41:00 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 9:41:05 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 9:43:05 PM
+-----------------------------------
