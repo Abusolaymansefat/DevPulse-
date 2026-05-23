@@ -2,11 +2,12 @@ import bcrypt from "bcrypt";
 import { pool } from "../../db";
 import type { IUser } from "./auth.interface";
 import { generateToken } from "../../utils/jwt";
+import type { Request, Response } from "express";
 
 export const signupUser = async (payload: IUser) => {
-      console.log(payload);
+  console.log(payload);
   const { name, email, password, role } = payload;
-  
+
 
   const existingUser = await pool.query(
     "SELECT * FROM users WHERE email = $1",
@@ -30,6 +31,7 @@ export const signupUser = async (payload: IUser) => {
 
   return result.rows[0];
 };
+
 
 export const loginUser = async (
   email: string,
@@ -72,4 +74,4 @@ export const loginUser = async (
       updated_at: user.updated_at,
     },
   };
-};
+}

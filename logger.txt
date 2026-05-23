@@ -24,3 +24,75 @@ URL: /api/auth/signup
 Status: 200
 Time   -> 5/23/2026, 7:27:46 PM
 -----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:14:56 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:15:08 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:20:19 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:20:20 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:20:20 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 8:20:47 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/signup
+Status: 200
+Time   -> 5/23/2026, 8:21:32 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/auth/login
+Status: 200
+Time   -> 5/23/2026, 8:21:38 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/issues
+Status: 200
+Time   -> 5/23/2026, 8:22:12 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/issues?sort=newest
+Status: 200
+Time   -> 5/23/2026, 8:22:38 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/issues/7
+Status: 200
+Time   -> 5/23/2026, 8:23:00 PM
+-----------------------------------
+
+Method -> GET
+URL: /api/issues/4
+Status: 200
+Time   -> 5/23/2026, 8:23:32 PM
+-----------------------------------
